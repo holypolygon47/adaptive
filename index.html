@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spacing Практика</title>
+    <title>Spacing Практика - Адаптивная</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="p-8">
+    <div class="p-4 md:p-8">
         <!-- Шапка -->
-        <header class="mb-12">
-            <nav class="flex justify-between items-center px-6 py-4 bg-gray-100 rounded-lg">
-                <div class="text-xl font-bold">Логотип</div>
-                <div class="flex space-x-6">
+        <header class="mb-8 md:mb-12">
+            <nav class="flex flex-col md:flex-row justify-between items-center px-4 md:px-6 py-4 bg-gray-100 rounded-lg">
+                <div class="text-xl font-bold mb-4 md:mb-0">Логотип</div>
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6 md:space-x-6">
                     <a href="" class="text-gray-700 hover:text-blue-600">Главная</a>
                     <a href="" class="text-gray-700 hover:text-blue-600">О нас</a>
                     <a href="" class="text-gray-700 hover:text-blue-600">Услуги</a>
@@ -22,43 +22,43 @@
         </header>
 
         <!-- Основной контент -->
-        <main class="space-y-12">
+        <main class="space-y-8 md:space-y-12">
             <!-- Герой секция -->
-            <section class="py-20 text-center bg-blue-50 rounded-xl">
-                <h1 class="text-4xl font-bold mb-6">Добро пожаловать на наш сайт</h1>
-                <p class="text-xl text-gray-600 mb-8">Мы создаём amazing продукты для вас</p>
-                <div class="space-x-4">
-                    <button class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Начать</button>
-                    <button class="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300">Узнать больше</button>
+            <section class="py-12 md:py-20 text-center bg-blue-50 rounded-xl px-4">
+                <h1 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6">Добро пожаловать на наш сайт</h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-6 md:mb-8">Мы создаём amazing продукты для вас</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 md:space-x-4">
+                    <button class="px-4 py-3 md:px-6 md:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Начать</button>
+                    <button class="px-4 py-3 md:px-6 md:py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300">Узнать больше</button>
                 </div>
             </section>
 
             <!-- Карточки услуг -->
-            <section class="my-12">
-                <h2 class="text-3xl font-bold text-center mb-12">Наши услуги</h2>
-                <div class="grid grid-cols-3 gap-8">
-                    <div class="p-6 bg-white border rounded-xl shadow-sm space-y-4">
-                        <h3 class="text-xl font-bold">Веб-разработка</h3>
+            <section class="my-8 md:my-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Наши услуги</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <div class="p-4 md:p-6 bg-white border rounded-xl shadow-sm space-y-3 md:space-y-4">
+                        <h3 class="text-lg md:text-xl font-bold">Веб-разработка</h3>
                         <p class="text-gray-600">Создаём современные веб-приложения</p>
-                        <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200">Подробнее</button>
+                        <button class="w-full md:w-auto px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200">Подробнее</button>
                     </div>
-                    <div class="p-6 bg-white border rounded-xl shadow-sm space-y-4">
-                        <h3 class="text-xl font-bold">Дизайн</h3>
+                    <div class="p-4 md:p-6 bg-white border rounded-xl shadow-sm space-y-3 md:space-y-4">
+                        <h3 class="text-lg md:text-xl font-bold">Дизайн</h3>
                         <p class="text-gray-600">Красивый и функциональный дизайн</p>
-                        <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200">Подробнее</button>
+                        <button class="w-full md:w-auto px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200">Подробнее</button>
                     </div>
-                    <div class="p-6 bg-white border rounded-xl shadow-sm space-y-4">
-                        <h3 class="text-xl font-bold">Маркетинг</h3>
+                    <div class="p-4 md:p-6 bg-white border rounded-xl shadow-sm space-y-3 md:space-y-4">
+                        <h3 class="text-lg md:text-xl font-bold">Маркетинг</h3>
                         <p class="text-gray-600">Продвижение вашего бизнеса</p>
-                        <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200">Подробнее</button>
+                        <button class="w-full md:w-auto px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200">Подробнее</button>
                     </div>
                 </div>
             </section>
 
             <!-- Форма обратной связи -->
-            <section class="max-w-2xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-8">Свяжитесь с нами</h2>
-                <form class="space-y-6 bg-gray-50 p-8 rounded-xl">
+            <section class="w-full px-4 md:max-w-2xl md:mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8">Свяжитесь с нами</h2>
+                <form class="space-y-4 md:space-y-6 bg-gray-50 p-4 md:p-8 rounded-xl">
                     <input type="text" class="w-full px-4 py-3 border rounded-lg" placeholder="Ваше имя">
                     <input type="email" class="w-full px-4 py-3 border rounded-lg" placeholder="Email">
                     <textarea class="w-full px-4 py-3 border rounded-lg" rows="4" placeholder="Сообщение"></textarea>
@@ -68,23 +68,23 @@
         </main>
 
         <!-- Подвал -->
-        <footer class="mt-12 border-t pt-12">
-            <div class="grid grid-cols-2 gap-8 mb-8">
+        <footer class="mt-8 md:mt-12 border-t pt-8 md:pt-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
                 <div class="space-y-2">
-                    <h4 class="font-bold text-lg mb-4">Компания</h4>
+                    <h4 class="font-bold text-lg mb-3 md:mb-4">Компания</h4>
                     <a href="" class="block text-gray-600 hover:text-blue-600">О нас</a>
                     <a href="" class="block text-gray-600 hover:text-blue-600">Команда</a>
                     <a href="" class="block text-gray-600 hover:text-blue-600">Вакансии</a>
                 </div>
                 <div class="space-y-2">
-                    <h4 class="font-bold text-lg mb-4">Поддержка</h4>
+                    <h4 class="font-bold text-lg mb-3 md:mb-4">Поддержка</h4>
                     <a href="" class="block text-gray-600 hover:text-blue-600">Помощь</a>
                     <a href="" class="block text-gray-600 hover:text-blue-600">Контакты</a>
                     <a href="" class="block text-gray-600 hover:text-blue-600">Форум</a>
                 </div>
             </div>
-            <div class="pt-8 mt-8 border-t text-center">
-                <p class="text-gray-500">© 2024 Все права защищены</p>
+            <div class="pt-6 md:pt-8 mt-6 md:mt-8 border-t text-center">
+                <p class="text-gray-500 text-sm md:text-base">© 2024 Все права защищены</p>
             </div>
         </footer>
     </div>
